@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Hub — Study smarter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">✦</span> student<span>hub</span></a>
+    <nav><a href="#workspace">Workspace</a><a href="#features">Features</a><button class="theme-btn" id="themeToggle" aria-label="Toggle theme">☼</button></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">YOUR LITTLE STUDY SPACE</div>
+      <h1>Turn your notes into<br><em>something you can remember.</em></h1>
+      <p class="hero-copy">Upload a PDF or Word file, build a reviewer, and practice with flashcards or a live quiz — all in one calm corner of the web.</p>
+      <a class="primary-btn" href="#workspace">Open workspace <span>↗</span></a>
+      <div class="hero-note">made for curious students <span>♡</span></div>
+    </section>
+
+    <section class="workspace" id="workspace">
+      <div class="section-heading"><div><div class="eyebrow">WORKSPACE</div><h2>What are we studying today?</h2></div><span class="status"><i></i> saved locally</span></div>
+      <div class="dashboard">
+        <aside class="side-panel">
+          <div class="side-label">CREATE</div>
+          <button class="side-link active" data-tab="upload"><span>↥</span> Add material</button>
+          <button class="side-link" data-tab="flashcards"><span>▣</span> Flashcards</button>
+          <button class="side-link" data-tab="quiz"><span>✎</span> Live quiz</button>
+          <button class="side-link" data-tab="export"><span>⇩</span> Export reviewer</button>
+          <div class="side-tip"><span>✦</span><strong>Small steps count.</strong><br>Keep your streak gentle and your curiosity loud.</div>
+        </aside>
+
+        <div class="content-panel">
+          <div class="tab-content active" id="upload">
+            <div class="panel-kicker">01 / ADD MATERIAL</div><h3>Bring your notes in.</h3>
+            <p class="muted">Drop a PDF or Word document here and Student Hub will turn it into a starting reviewer.</p>
+            <label class="dropzone" for="fileInput"><div class="upload-icon">↥</div><strong>Drop your file here</strong><span>or click to browse · PDF, DOC, DOCX</span><input id="fileInput" type="file" accept=".pdf,.doc,.docx" /></label>
+            <div class="demo-row"><button class="secondary-btn" id="demoBtn">Try with demo notes</button><span id="fileStatus">No file selected</span></div>
+          </div>
+          <div class="tab-content" id="flashcards"><div class="panel-kicker">02 / FLASHCARDS</div><h3>Review in little loops.</h3><p class="muted">Your generated cards will appear here. Start with the demo notes to preview the flow.</p><div class="empty-card">✦<br><strong>Your cards are waiting.</strong><br><span>Add material first, then come back here.</span></div></div>
+          <div class="tab-content" id="quiz"><div class="panel-kicker">03 / LIVE QUIZ</div><h3>Make studying social.</h3><p class="muted">Create a room, share the code, and answer together in real time.</p><div class="quiz-card"><div class="quiz-code">YOUR ROOM CODE</div><div class="big-code">HUB-<span id="roomCode">2026</span></div><button class="primary-btn small" id="newRoom">Create new room ↗</button></div></div>
+          <div class="tab-content" id="export"><div class="panel-kicker">04 / EXPORT</div><h3>Take your reviewer with you.</h3><p class="muted">Generate a clean printable answer sheet from your reviewer.</p><div class="export-card"><span class="file-icon">PDF</span><div><strong>Reviewer answer sheet</strong><br><span>Ready when your material is prepared.</span></div><button class="secondary-btn" id="exportBtn">Generate PDF</button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features"><div class="eyebrow">THE PLAN</div><h2>Less friction. More <em>aha!</em></h2><div class="feature-grid"><article><span>01</span><h3>Upload & extract</h3><p>Bring class notes, modules, and handouts into one focused workspace.</p></article><article><span>02</span><h3>Review your way</h3><p>Switch between flashcards, answer sheets, and self-paced practice.</p></article><article><span>03</span><h3>Learn together</h3><p>Host live quiz rooms for study groups, classmates, and recitations.</p></article></div></section>
+  </main>
+  <footer><span>studenthub · a tiny corner for big ideas</span><span>built for learning ♡</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
