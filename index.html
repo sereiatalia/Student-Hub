@@ -1,58 +1,12 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Hub — Study smarter</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#"><span class="brand-mark">✦</span> student<span>hub</span></a>
-    <nav><a href="#workspace">Workspace</a><a href="#features">Features</a><button class="theme-btn" id="themeToggle" aria-label="Toggle theme">☼</button></nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="eyebrow">YOUR LITTLE STUDY SPACE</div>
-      <h1>Turn your notes into<br><em>something you can remember.</em></h1>
-      <p class="hero-copy">Upload a PDF or Word file, build a reviewer, and practice with flashcards or a live quiz — all in one calm corner of the web.</p>
-      <a class="primary-btn" href="#workspace">Open workspace <span>↗</span></a>
-      <div class="hero-note">made for curious students <span>♡</span></div>
-    </section>
-
-    <section class="workspace" id="workspace">
-      <div class="section-heading"><div><div class="eyebrow">WORKSPACE</div><h2>What are we studying today?</h2></div><span class="status"><i></i> saved locally</span></div>
-      <div class="dashboard">
-        <aside class="side-panel">
-          <div class="side-label">CREATE</div>
-          <button class="side-link active" data-tab="upload"><span>↥</span> Add material</button>
-          <button class="side-link" data-tab="flashcards"><span>▣</span> Flashcards</button>
-          <button class="side-link" data-tab="quiz"><span>✎</span> Live quiz</button>
-          <button class="side-link" data-tab="export"><span>⇩</span> Export reviewer</button>
-          <div class="side-tip"><span>✦</span><strong>Small steps count.</strong><br>Keep your streak gentle and your curiosity loud.</div>
-        </aside>
-
-        <div class="content-panel">
-          <div class="tab-content active" id="upload">
-            <div class="panel-kicker">01 / ADD MATERIAL</div><h3>Bring your notes in.</h3>
-            <p class="muted">Drop a PDF or Word document here and Student Hub will turn it into a starting reviewer.</p>
-            <label class="dropzone" for="fileInput"><div class="upload-icon">↥</div><strong>Drop your file here</strong><span>or click to browse · PDF, DOC, DOCX</span><input id="fileInput" type="file" accept=".pdf,.doc,.docx" /></label>
-            <div class="demo-row"><button class="secondary-btn" id="demoBtn">Try with demo notes</button><span id="fileStatus">No file selected</span></div>
-          </div>
-          <div class="tab-content" id="flashcards"><div class="panel-kicker">02 / FLASHCARDS</div><h3>Review in little loops.</h3><p class="muted">Your generated cards will appear here. Start with the demo notes to preview the flow.</p><div class="empty-card">✦<br><strong>Your cards are waiting.</strong><br><span>Add material first, then come back here.</span></div></div>
-          <div class="tab-content" id="quiz"><div class="panel-kicker">03 / LIVE QUIZ</div><h3>Make studying social.</h3><p class="muted">Create a room, share the code, and answer together in real time.</p><div class="quiz-card"><div class="quiz-code">YOUR ROOM CODE</div><div class="big-code">HUB-<span id="roomCode">2026</span></div><button class="primary-btn small" id="newRoom">Create new room ↗</button></div></div>
-          <div class="tab-content" id="export"><div class="panel-kicker">04 / EXPORT</div><h3>Take your reviewer with you.</h3><p class="muted">Generate a clean printable answer sheet from your reviewer.</p><div class="export-card"><span class="file-icon">PDF</span><div><strong>Reviewer answer sheet</strong><br><span>Ready when your material is prepared.</span></div><button class="secondary-btn" id="exportBtn">Generate PDF</button></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="features" id="features"><div class="eyebrow">THE PLAN</div><h2>Less friction. More <em>aha!</em></h2><div class="feature-grid"><article><span>01</span><h3>Upload & extract</h3><p>Bring class notes, modules, and handouts into one focused workspace.</p></article><article><span>02</span><h3>Review your way</h3><p>Switch between flashcards, answer sheets, and self-paced practice.</p></article><article><span>03</span><h3>Learn together</h3><p>Host live quiz rooms for study groups, classmates, and recitations.</p></article></div></section>
-  </main>
-  <footer><span>studenthub · a tiny corner for big ideas</span><span>built for learning ♡</span></footer>
-  <script src="app.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Student Hub · your mini study laptop</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body><div class="sticker s1">✦</div><div class="sticker s2">♡</div><div class="sticker s3">✿</div>
+<header class="topbar"><a class="brand" href="#"><b>✦</b> student<span>hub</span></a><nav><a href="#desk">My desk</a><a href="#how">How it works</a><button id="theme" class="icon-btn">☼</button></nav></header>
+<main><section class="hero"><div class="eyebrow">A MINI STUDENT LAPTOP</div><h1>Your notes,<br><em>your little study world.</em></h1><p>Read, highlight, make flashcards, build quizzes, and keep every study file tucked into its own cute little folder.</p><a class="primary" href="#desk">Open my desk <span>↗</span></a><div class="tiny-note">made for busy brains and soft hearts ♡</div></section>
+<section class="desk" id="desk"><div class="desk-top"><div><div class="eyebrow">MY DESK</div><h2>Good morning, study buddy!</h2></div><span class="saved"><i></i> saved on this device</span></div><div class="laptop"><aside class="sidebar"><div class="profile"><div class="avatar">૮ ˶ᵔ ᵕ ᵔ˶ ა</div><div><strong>my study space</strong><small>quiet corner · online</small></div></div><div class="side-title">SPACES</div><button class="nav active" data-view="reading">▧ <span>Reading space</span></button><button class="nav" data-view="cards">▤ <span>Flashcards</span><em id="cardCount">0</em></button><button class="nav" data-view="quizzes">✎ <span>Quiz room</span><em id="quizCount">0</em></button><div class="side-title folder-title">FOLDERS <button id="addFolder">＋</button></div><div id="folders"><div class="folder">♡ <span>My materials</span></div><div class="folder">✿ <span>Biology notes</span></div></div><div class="tip">✦ <b>tiny reminder</b><br>Progress does not have to be perfect.</div></aside>
+<div class="screen"><div class="screenbar"><span class="dots">● ● ●</span><span id="screenTitle">Reading space</span><button id="clearData" title="Clear local saved data">↺</button></div>
+<div class="view active" id="reading"><div class="view-head"><div><label>READING SPACE</label><h3>Bring your notes in.</h3><p>Read your PDF or Word files without changing the original. Mark the important bits in pastel.</p></div><label class="upload primary small" for="file">＋ Upload file<input id="file" type="file" accept=".pdf,.doc,.docx"></label></div><div class="reader"><div class="reader-tools"><button class="tool active" data-color="#f7b6c9">🖍 Pink</button><button class="tool" data-color="#b9e6d3">🖍 Mint</button><button class="tool" data-color="#c9c4f5">🖍 Lilac</button><button class="tool" data-color="#f9dc99">🖍 Lemon</button><button id="marker">✎ Marker</button><button id="clearMarks">⌫ Clear marks</button></div><article id="paper"><span class="paper-label">WELCOME TO MY NOTES</span><h4>Upload a file to start reading ♡</h4><p>Student Hub keeps your file on this device and gives you a calm place to study. Use the pastel tools above to highlight this sample text, or upload your own PDF / Word file to connect your next lesson.</p><p class="sample">“Little by little, a little becomes a lot.”</p></article></div><div class="file-chip" id="fileName">No file selected · your files stay on this device</div></div>
+<div class="view" id="cards"><div class="view-head"><div><label>FLASHCARD MAKER</label><h3>Turn notes into cards.</h3><p>Choose how many cards you want — up to 100 — then edit and review them.</p></div><button class="primary small" id="makeCards">✦ Make flashcards</button></div><div class="generator"><input id="cardName" placeholder="Name this flashcard set…"><input id="cardNumber" type="number" min="1" max="100" value="10"><span>cards</span></div><div class="cards-preview" id="cardsPreview"><div class="placeholder">Your generated cards will appear here ✦</div></div></div>
+<div class="view" id="quizzes"><div class="view-head"><div><label>QUIZ ROOM</label><h3>Study together, playfully.</h3><p>Make your own quiz or let Student Hub create a quiz from your notes.</p></div><button class="primary small" id="makeQuiz">✦ Make a quiz</button></div><div class="quiz-options"><input id="quizName" placeholder="Name this quiz…"><input id="quizNumber" type="number" min="1" max="100" value="10"><span>questions</span><button class="secondary" id="newRoom">Create live room ↗</button></div><div class="quiz-room" id="quizPreview"><b>READY TO REVIEW?</b><strong>HUB-2026</strong><span>Share the code with your study group when you are ready.</span></div></div>
+</div></div></section>
+<section class="how" id="how"><div class="eyebrow">YOUR STUDY FLOW</div><h2>Soft tools for serious <em>learning.</em></h2><div class="flow"><article><b>01</b><h3>Read & mark</h3><p>Keep the original document while using cute highlighters and markers to find what matters.</p></article><article><b>02</b><h3>Make a reviewer</h3><p>Generate named flashcard sets from your uploaded material, with a maximum of 100 cards.</p></article><article><b>03</b><h3>Save in folders</h3><p>Keep readings, flashcards, and quizzes organized in your own little study hub.</p></article></div></section></main><footer><span>studenthub · your tiny study laptop</span><span>private to this device ♡</span></footer><script src="app.js"></script></body></html>
